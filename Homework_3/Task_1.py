@@ -22,7 +22,7 @@ print(result)
 
 
 
-Исправлено согласно замечанию:
+Исправлено согласно замечанию: 
 
 def remove_duplicates(input_list):
     unique_elements = set()
