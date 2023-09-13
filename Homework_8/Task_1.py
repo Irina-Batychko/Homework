@@ -40,7 +40,7 @@ def get_directory_info(directory):
 
             data.append(file_info)
 
-    # Сохранение результатов в JSON, CSV и Pickle
+    # Сохранение результатов в JSON
     with open('json_file_.json', 'w') as json_file:
         json.dump(data, json_file)
 
