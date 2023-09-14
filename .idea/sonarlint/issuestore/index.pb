@@ -1,7 +1,7 @@
 
-J
-Homework_8/json_file_.json,d\8\d86775a9887ad66c49ad3b34dd805ab66b270380
-H
-Homework_8/csv_file_.csv,4\2\4256a75929e1656c5ff632ac335c7b1f10d63b4b
 D
-Homework_8/Task_1.py,b\5\b5d26fb2f0f46850a720d58fde293c1ae181c5e5
+Homework_9/Task_1.py,9\3\935d175c6d5a808059a09e3e493f56ed2b5c793a
+G
+Homework_9/results.json,2\8\28099a3ea920caf103735f655c389fbd2af79850
+M
+Homework_9/random_numbers.csv,0\2\02f901d2f9a047d2836dfb9da9768f4df1280ecf
