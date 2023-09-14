@@ -44,7 +44,7 @@ def get_directory_info(directory):
     with open('json_file_.json', 'w') as json_file:
         json.dump(data, json_file)
 
-    # Сохранение результатов в CSV
+    # Сохранение результатов в CSV 
     with open('csv_file_.csv', 'w', newline='') as csv_file:
         fieldnames = ['name', 'path', 'type', 'size']
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
