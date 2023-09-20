@@ -28,6 +28,19 @@ class Animal:
         pass
 
 
+class Factory:
+    @staticmethod
+    def create_animal(animal_type, name):
+        if animal_type == 'dog':
+            return Dog(name)
+        elif animal_type == 'cat':
+            return Cat(name)
+        elif animal_type == 'bear':
+            return Bear(name)
+        else:
+            raise ValueError(f"Неизвестный тип животного: {animal_type}")
+
+
 class Dog(Animal):
     def speak(self):
         return f"{self.name} говорит: Гав-гав!"
@@ -43,25 +56,12 @@ class Bear(Animal):
         return f"{self.name} говорит: Ррррр!"
 
 
-def create_animal(animal_type, name):
-    ANIMALS = {
-        'dog': Dog,
-        'cat': Cat,
-        'bear': Bear
-    }
-
-    if animal_type in ANIMALS:
-        animal_class = ANIMALS[animal_type]
-        return animal_class(name)
-    else:
-        raise ValueError(f"Неизвестный тип животного: {animal_type}")
-
-
-my_dog = create_animal('dog', 'Шарик')
+my_dog = Factory.create_animal('dog', 'Шарик')
 print(my_dog.speak())
 
-my_cat = create_animal('cat', 'Васька')
+my_cat = Factory.create_animal('cat', 'Васька')
 print(my_cat.speak())
 
-my_bear = create_animal('bear', 'Мишка')
+my_bear = Factory.create_animal('bear', 'Мишка')
 print(my_bear.speak())
+
